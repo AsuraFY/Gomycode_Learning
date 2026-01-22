@@ -1,0 +1,470 @@
+/* Header CSS */
+
+        .header {
+            position: fixed;            /* Stays at the top while scrolling */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;               /* Fixed height */
+            background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+            border-bottom: 1px solid #ebebeb;
+            display: flex;
+            justify-content: center;    /* Centers the content container */
+            align-items: center;
+            z-index: 1000;              /* Stays above all other sections */
+            padding: 0 20px;
+        }
+
+        /* Inner container to keep logo and nav aligned with the main page width */
+        .header > div, 
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1015px;         /* Matches your main section width */
+            margin: 0 auto;            /* Centers the header on the screen */
+        }
+
+        /* Logo Size */
+        .logo img {
+            height: 33px;
+            width: auto;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 25px;                 /* Space between links */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ababab;            /* Soft grey color */
+            font-size: 15px;
+            font-weight: 400;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00b39b;            /* Brand teal color on hover */
+        }
+
+        /* Optional: Make the first link look active */
+        .nav-links a:first-child {
+            color: #00b39b;
+        }
+/* End of Header CSS */
+
+
+/* General Section Styling */
+body {
+    padding-top: 70px; /* Same as the header height */
+}
+
+section > div {
+    padding: 60px 0;
+    max-width: 1015px;
+    margin: 0 auto;
+}
+
+
+
+/* Section 1 CSS */
+/* Center the entire section and give it space */
+.section1 {
+    text-align: center; /* Centers the logo and h1 */
+}
+
+.s1-container {
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. The Logo: Stop it from being too big */
+.section1 img {
+    height: 33px; /* Precise height for the lead icon */
+    width: auto;
+    margin-bottom: 25px;
+}
+
+/* 2. The Heading: Thin and Teal */
+.s1-heading-style {
+    color: #00b39b; /* Brand Teal */
+    font-size: 2.1rem;
+    font-weight: 300; /* Makes it elegant, not chunky */
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* 3. The Columns: Side-by-side paragraphs */
+.s1-full-box {
+    display: flex;
+    justify-content: center; /* Centers the two boxes together */
+    gap: 30px;              /* Space between the two columns */
+    text-align: left;       /* Text inside boxes remains readable (left-aligned) */
+}
+
+.s1-half-box {
+    flex: 1;                /* Both boxes take equal width */
+    max-width: 480px;       /* Stops text from stretching too wide */
+    color: #747474;         /* Soft grey text */
+    font-size: 16px;
+    line-height: 1.75;      /* Good vertical spacing between lines */
+}
+
+/* Section 2 CSS */
+/* Container for the 3 cards */
+.s2-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between cards */
+    max-width: 1015px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Base style for all 3 cards */
+.s2-for-card {
+    flex: 1; /* Makes cards equal width */
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    min-height: 300px; /* Forces cards to have the same height */
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    transition: transform 0.3s ease;
+}
+
+/* Individual Card Colors */
+.s2-for-card:nth-child(1) , .s2-for-card:nth-child(1) select , .s2-for-card:nth-child(1) option { 
+    background-color: #00ccb1;  /* Patients - Teal */
+}
+.s2-for-card:nth-child(2) , .s2-for-card:nth-child(2) select , .s2-for-card:nth-child(2) option { 
+    background-color: #3d83df;  /* Doctors - Blue */
+}
+.s2-for-card:nth-child(3) , .s2-for-card:nth-child(3) select , .s2-for-card:nth-child(3) option { 
+    background-color: #1b2734;  /* Clinics - Dark Navy */
+}
+
+/* Card Content Styling */
+.s2-for-card img {
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.s2-for-card h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.s2-for-card p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7); /* Faded white for the small title */
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    /* margin-bottom: auto; Pushes the select menu to the bottom */
+
+}
+
+/* Styling the Select Dropdown */
+.s2-select-wrapper {
+    margin-top: auto; /* Ensures it always stays at the bottom of the card */
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.s2-select-wrapper select {
+    background: transparent;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+/* Ensures the dropdown options are readable */
+.s2-select-wrapper select option {
+    color: grey;
+}
+
+
+/* Section 3 CSS */
+.section3 {
+    padding: 60px 0;
+}
+
+.section3-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Left Side: The Heading */
+.s3-header-box {
+    flex: 0 0 30%; /* Takes up 30% of the width */
+}
+
+.s3-heading-style {
+    color: #00b39b;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Right Side: The Logo Grid */
+.s3-logo-box {
+    flex: 0 0 65%; /* Takes up 65% of the width */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 logos per row */
+    gap: 30px;
+    align-items: center;
+}
+
+.s3-logo-box img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    /* This makes logos gray/faded like in your screenshot */
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+/* Hover effect: Logos turn back to color when you touch them */
+.s3-logo-box img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+/* Section 4 CSS */
+.section4 {
+    background-color: #e5f7f5; /* Light teal background from your image */
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 60px 0 0 0;
+    width: 100%;
+}
+
+/* The Centering Container (Stays in the middle) */
+.s4-container {
+    max-width: 1015px;      /* Limits the width on large screens */
+    margin: 0 auto;         /* Magic command: Equal left/right margins */
+    padding: 0 20px;        /* Safety space for mobile screens */
+    display: flex;          /* Side-by-side layout */
+    justify-content: space-between;
+}
+
+.s4-half-box {
+    flex: 1;                /* Both sides take equal available space */
+}
+ 
+/* Writing style */
+.s4-heading-style {
+    color: #00b39b;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.s4-sub-style {
+    font-size: 14px;
+    color: #747474;
+}
+
+/* Image container for watermark */
+.s4-img {
+    margin-top: 20px;
+    opacity: 0.5;
+}
+
+/* Right side grid of cards */
+.s4-stats-container {
+    flex: 1;  /* Makes the grid side slightly wider  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 20px; /* Space below the grid */
+}
+
+.s4-stats-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+.s4-stats-card > h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Stats Card Flag */
+.s4-stats-card img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Section 5 CSS */
+.section5 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.s5-container {
+    max-width: 800px; /* Narrower than other sections for better readability */
+    margin: 0 auto;
+}
+
+.s5-heading-style {
+    color: #00b39b;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.s5-sub-style {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #747474;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Section 6 CSS */
+.s6-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Responsive grid */
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.s6-country-card {
+    border: 1px solid #eef2f2;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners follow border-radius */
+    transition: 0.3s ease;
+}
+
+.s6-country-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.s6-country-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Prevents image stretching */
+}
+
+.s6-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 5px;
+}
+
+.s6-country-name {
+    font-size: 25px;
+    font-weight: 300;
+    color: #747474;
+}
+
+
+.s6-box-click {
+    padding: 10px;
+    background-color: #3d83df;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* Section 7 CSS */
+.section7 {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.s7-heading-style {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--text-gray);
+    font-weight: 300;
+}
+
+.s7-box-click {
+    background-color: var(--doc-blue);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 400;
+    transition: background 0.2s;
+}
+
+.s7-box-click:hover {
+    background-color: #2b6cb0;
+}
+
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid #eef2f2;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #ababab; /* Light gray to keep it clean */
+    line-height: 1.8;
+}
+
+.footer-container a {
+    color: #3d83df; /* Brand blue for country links */
+    text-decoration: none;
+}
+
+.footer-container a:hover { text-decoration: underline; }
+
+.copyright {
+    margin-top: 10px;
+    font-size: 11px;
+}
