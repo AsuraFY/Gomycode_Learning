@@ -1,0 +1,89 @@
+/* Brand Colors  and text style*/
+:root {
+  --acs-green: #4F7942; 
+  --acs-white: #ffffff;
+  --acs-light-green: #f1f8f0;
+}
+
+.bg-acs-green {
+  background-color: var(--acs-green) !important;
+}
+.bg-acs-light-green {
+  background-color: var(--acs-light-green) !important;
+}
+.bg-acs-dark {
+  background-color: #0d170d !important; /* A very dark, sophisticated forest green */
+}
+
+.text-acs {
+  color: var(--acs-green) !important; 
+}
+.text-acs-light-green {
+  color: var(--acs-light-green) !important; 
+}
+.text-acs-grey {
+  color: #adb5bd !important; /* Light grey for the copyright text */
+}
+
+/* header - navigation */
+@media (max-width: 991.98px) {
+  /* This ensures the toggler and cart take up the same space to center the brand name */
+  .navbar-toggler, .cart-container {
+    width: 50px; 
+    display: flex;
+    justify-content: center;
+  }
+}
+.offcanvas {
+    height: auto !important;
+    max-height: 100vh;
+}
+
+
+
+/* Products */
+#products img {
+    object-fit: contain;
+    height : 200px;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--acs-light-green);
+}
+
+#products .fa-cart-plus {
+    font-size: 1.2rem;
+    color: var(--acs-green);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%; /* Makes the hover area a circle */
+}
+
+
+#products .fa-cart-plus:hover {
+    background-color: var(--acs-light-green); /* Subtle background highlight */
+    color: var(--acs-dark);                   /* Darken the icon color */
+    transform: translateY(-3px) scale(1.1);   /* Lift it up and grow it slightly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+
+
+/* Footer styling */
+.footer-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #a3cfbb !important; /* Mint green on hover */
+  transform: translateY(-3px);
+  display: inline-block;
+}
+
+/* Ensure links in the middle also have a nice hover */
+footer ul li a:hover {
+  color: #a3cfbb !important;
+}

@@ -427,17 +427,18 @@ section > div {
 }
 
 .s7-box-click {
-    background-color: var(--doc-blue);
+    background-color: #3d83df;
+    opacity: 70%;
     color: rgb(255, 255, 255);
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 400;
-    transition: background 0.2s;
+    /* transition: background 0.2s; */
 }
 
 .s7-box-click:hover {
-    background-color: #2b6cb0;
+    opacity: 100%;
 }
 
 
