@@ -1,51 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Learning Projects</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
-<body>
+<body class="min-h-screen bg-[linear-gradient(135deg,#050816_0%,#0b1226_35%,#1a1033_68%,#2a0d1f_100%)] text-pink-50 relative overflow-x-hidden">
 
-  <h1>Welcome to My Learning Hub</h1>
+  <!-- Decorative floral feeling -->
+  <div class="pointer-events-none absolute top-6 left-6 text-pink-300/10 text-8xl sm:text-9xl">✿</div>
+  <div class="pointer-events-none absolute bottom-6 right-6 text-rose-300/10 text-8xl sm:text-9xl rotate-12">❀</div>
+  <div class="pointer-events-none absolute top-1/3 right-10 text-fuchsia-300/10 text-6xl hidden md:block">✾</div>
 
-  <ul>
-    <li>
-      <a href="HTML_basics/HTML_Project1_Portfolio/portfolio.html">
-        HTML basics : Personal Portfolio Website
-      </a>
-    </li>
+  <main class="min-h-screen flex items-center justify-center px-4 py-10">
+    <section class="w-full max-w-5xl rounded-3xl border border-pink-200/10 bg-white/5 backdrop-blur-md shadow-[0_0_60px_rgba(244,114,182,0.08)] overflow-hidden">
 
-    <li>
-      <a href="HTML_basics/HTML_Project2_Restaurant/restaurant_menu.html">
-        HTML basics : Immortal Pavilion – Restaurant Concept
-      </a>
-    </li>
+      <!-- Header -->
+      <div class="px-6 py-10 sm:px-10 text-center border-b border-white/10 bg-gradient-to-b from-pink-500/10 to-transparent">
+        <p class="uppercase tracking-[0.35em] text-xs text-pink-300 mb-3">Creative Coding Journey</p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-3">
+          Welcome to My Learning Hub
+        </h1>
+        <p class="text-sm sm:text-base text-pink-100/70 max-w-2xl mx-auto leading-relaxed">
+          A collection of my HTML, CSS, Bootstrap, and responsive design practice projects,
+          displayed in one place.
+        </p>
+      </div>
 
+      <!-- Project list -->
+      <div class="p-4 sm:p-6 md:p-8">
+        <ul class="grid gap-4">
 
-    <li>
-      <a href="CSS_Essentials/CSS_Layout_Project/docplanner.html">
-        CSS Essentials : Docplanner Landing Page Layout
-      </a>
-    </li>
+          <li>
+            <a href="HTML_basics/HTML_Project1_Portfolio/portfolio.html"
+               class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(17,24,39,0.88),rgba(36,10,44,0.92))] px-4 py-4 sm:px-5 transition duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:shadow-[0_10px_30px_rgba(244,114,182,0.16)]">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-rose-500 text-white shadow-lg">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <span class="flex-1">
+                <span class="block text-xs uppercase tracking-[0.25em] text-pink-300/80 mb-1">HTML Basics</span>
+                <span class="block text-white text-sm sm:text-base font-medium">Personal Portfolio Website</span>
+              </span>
+              <i class="fa-solid fa-arrow-right text-pink-300 transition group-hover:translate-x-1"></i>
+            </a>
+          </li>
 
-    <li>
-      <a href="CSS_Essentials/CSS_Portfolio_Project/portfolio2.html">
-        CSS Essentials : Advanced Portfolio Design with CSS
-      </a>
-    </li>
+          <li>
+            <a href="HTML_basics/HTML_Project2_Restaurant/restaurant_menu.html"
+               class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(17,24,39,0.88),rgba(36,10,44,0.92))] px-4 py-4 sm:px-5 transition duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:shadow-[0_10px_30px_rgba(244,114,182,0.16)]">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-fuchsia-500 to-rose-500 text-white shadow-lg">
+                <i class="fa-solid fa-utensils"></i>
+              </span>
+              <span class="flex-1">
+                <span class="block text-xs uppercase tracking-[0.25em] text-pink-300/80 mb-1">HTML Basics</span>
+                <span class="block text-white text-sm sm:text-base font-medium">Immortal Pavilion – Restaurant Concept</span>
+              </span>
+              <i class="fa-solid fa-arrow-right text-pink-300 transition group-hover:translate-x-1"></i>
+            </a>
+          </li>
 
+          <li>
+            <a href="CSS_Essentials/CSS_Layout_Project/docplanner.html"
+               class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(17,24,39,0.88),rgba(36,10,44,0.92))] px-4 py-4 sm:px-5 transition duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:shadow-[0_10px_30px_rgba(244,114,182,0.16)]">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-rose-500 to-red-500 text-white shadow-lg">
+                <i class="fa-solid fa-laptop-code"></i>
+              </span>
+              <span class="flex-1">
+                <span class="block text-xs uppercase tracking-[0.25em] text-pink-300/80 mb-1">CSS Essentials</span>
+                <span class="block text-white text-sm sm:text-base font-medium">Docplanner Landing Page Layout</span>
+              </span>
+              <i class="fa-solid fa-arrow-right text-pink-300 transition group-hover:translate-x-1"></i>
+            </a>
+          </li>
 
-    <li>
-      <a href="Responsive_Web_Design_with_CSS_Libraries_I_Bootstrap/Checkpoint 1 Responsive Website for travel Agency and Fictional Restaurant/Bootstrap_Grid_System_Responsive_Website_for_fictional_restaurant/fictional-restaurant-bootstrap.html">
-        Bootstrap & Grid System - Responsive Website for fictional restaurant
-      </a>
-    </li>
-        <li>
-      <a href="Responsive_Web_Design_with_CSS_Libraries_I_Bootstrap/Checkpoint 1 Responsive Website for travel Agency and Fictional Restaurant/Bootstrap_Components_Checkpoint_Responsive_website_for_a_travel_agency/travel-agency-bootstrap.html">
-        Bootstrap Components Checkpoint - Responsive website for a travel agency
-      </a>
-    </li>
-  </ul>
+          <li>
+            <a href="CSS_Essentials/CSS_Portfolio_Project/portfolio2.html"
+               class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(17,24,39,0.88),rgba(36,10,44,0.92))] px-4 py-4 sm:px-5 transition duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:shadow-[0_10px_30px_rgba(244,114,182,0.16)]">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white shadow-lg">
+                <i class="fa-solid fa-palette"></i>
+              </span>
+              <span class="flex-1">
+                <span class="block text-xs uppercase tracking-[0.25em] text-pink-300/80 mb-1">CSS Essentials</span>
+                <span class="block text-white text-sm sm:text-base font-medium">Advanced Portfolio Design with CSS</span>
+              </span>
+              <i class="fa-solid fa-arrow-right text-pink-300 transition group-hover:translate-x-1"></i>
+            </a>
+          </li>
 
+          <li>
+            <a href="Responsive_Web_Design_with_CSS_Libraries_I_Bootstrap/Checkpoint 1 Responsive Website for travel Agency and Fictional Restaurant/Bootstrap_Grid_System_Responsive_Website_for_fictional_restaurant/fictional-restaurant-bootstrap.html"
+               class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(17,24,39,0.88),rgba(36,10,44,0.92))] px-4 py-4 sm:px-5 transition duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:shadow-[0_10px_30px_rgba(244,114,182,0.16)]">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-pink-500 text-white shadow-lg">
+                <i class="fa-solid fa-champagne-glasses"></i>
+              </span>
+              <span class="flex-1">
+                <span class="block text-xs uppercase tracking-[0.25em] text-pink-300/80 mb-1">Bootstrap & Grid System</span>
+                <span class="block text-white text-sm sm:text-base font-medium">Responsive Website for Fictional Restaurant</span>
+              </span>
+              <i class="fa-solid fa-arrow-right text-pink-300 transition group-hover:translate-x-1"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="Responsive_Web_Design_with_CSS_Libraries_I_Bootstrap/Checkpoint 1 Responsive Website for travel Agency and Fictional Restaurant/Bootstrap_Components_Checkpoint_Responsive_website_for_a_travel_agency/travel-agency-bootstrap.html"
+               class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(17,24,39,0.88),rgba(36,10,44,0.92))] px-4 py-4 sm:px-5 transition duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:shadow-[0_10px_30px_rgba(244,114,182,0.16)]">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-red-500 text-white shadow-lg">
+                <i class="fa-solid fa-plane-departure"></i>
+              </span>
+              <span class="flex-1">
+                <span class="block text-xs uppercase tracking-[0.25em] text-pink-300/80 mb-1">Bootstrap Components</span>
+                <span class="block text-white text-sm sm:text-base font-medium">Responsive Website for a Travel Agency</span>
+              </span>
+              <i class="fa-solid fa-arrow-right text-pink-300 transition group-hover:translate-x-1"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
